@@ -167,6 +167,13 @@ public class SolrQueryMethod extends QueryMethod {
 	    }
 	    return ""; 
 	}
+	
+	public boolean isQuoteValues() {
+	    if(hasQueryAnnotation()) {
+	        return getQueryAnnotation().quoteValues();
+	    }
+	    return false;
+	}
 
 	@SuppressWarnings("unchecked")
 	private List<String> getAnnotationValuesAsStringList(Annotation annotation, String attribute) {

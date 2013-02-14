@@ -151,5 +151,10 @@ public interface Query extends SolrDataQuery {
 	 * Sets the default type to be used by the query.
 	 */
     void setDefType(String defType);
+    
+    
+    boolean isQuoteVaule();
+    
+    void setQuoteValues(boolean quoteValues);
 
 }

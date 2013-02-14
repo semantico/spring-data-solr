@@ -70,5 +70,8 @@ public @interface Query {
 	 * @return 
 	 */
 	String defType() default "";
+	
+	
+	boolean quoteValues() default true;
 
 }
